@@ -1,0 +1,87 @@
+@model Konsten.Models.Artwork
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Ändra</h1>
+
+<h4>Konstverk</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ArtistNameId" class="control-label"></label>
+                <select asp-for="ArtistNameId" class="form-control" asp-items="ViewBag.ArtistNameId"></select>
+                <span asp-validation-for="ArtistNameId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtName" class="control-label"></label>
+                <input asp-for="ArtName" class="form-control" />
+                <span asp-validation-for="ArtName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtYear" class="control-label"></label>
+                <input asp-for="ArtYear" class="form-control" />
+                <span asp-validation-for="ArtYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtTechnique" class="control-label"></label>
+                <input asp-for="ArtTechnique" class="form-control" />
+                <span asp-validation-for="ArtTechnique" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtPrice" class="control-label"></label>
+                <input asp-for="ArtPrice" class="form-control" />
+                <span asp-validation-for="ArtPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtWidth" class="control-label"></label>
+                <input asp-for="ArtWidth" class="form-control" />
+                <span asp-validation-for="ArtWidth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtHeight" class="control-label"></label>
+                <input asp-for="ArtHeight" class="form-control" />
+                <span asp-validation-for="ArtHeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageName" class="control-label"></label>
+                <input asp-for="ImageName" class="form-control" />
+                <span asp-validation-for="ImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AltText" class="control-label"></label>
+                <input asp-for="AltText" class="form-control" />
+                <span asp-validation-for="AltText" class="text-danger"></span>
+            </div>
+            <dt class="col-sm-2">
+                Uppladdad bild:
+            </dt>
+            <dd class="col-sm-10">
+                <img decoding="async" src="@("~/imageupload/"+Model.ImageName)" asp-append-version="true" width="300px"
+                    height="250px" />
+            </dd>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Spara" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Tillbaka till listan</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

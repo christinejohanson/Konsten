@@ -1,0 +1,74 @@
+@model Konsten.Models.Artwork
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detaljer</h1>
+
+<div>
+    <h4>Konstverk</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtistName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtistName.TheArtist)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtYear)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtYear)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtTechnique)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtTechnique)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtWidth)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtWidth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtHeight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ArtHeight)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AltText)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AltText)
+        </dd>
+        <dt class="col-sm-2">
+            Uppladdad bild
+        </dt>
+        <dd class="col-sm-10">
+            <img decoding="async" src="@("~/imageupload/"+Model.ImageName)" asp-append-version="true" width="300px"
+                height="250px" />
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Uppdatera</a> |
+    <a asp-action="Index">Tillbaka till listan</a>
+</div>
