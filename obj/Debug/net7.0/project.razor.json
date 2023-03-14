@@ -16605,6 +16605,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Shared/_AdminLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AdminLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Artwork/List.cshtml",
+      "TargetPath": "Views\\Artwork\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/ArtistName/List.cshtml",
+      "TargetPath": "Views\\ArtistName\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/christinejohanson/Code/Konsten/Views/ArtistName/Delete.cshtml",
       "TargetPath": "Views\\ArtistName\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16650,11 +16665,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Shared/_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -16672,6 +16682,11 @@
     {
       "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Artwork/Delete.cshtml",
       "TargetPath": "Views\\Artwork\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Home/About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
     }
   ],

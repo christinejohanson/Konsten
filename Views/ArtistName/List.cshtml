@@ -1,0 +1,22 @@
+@model IEnumerable<Konsten.Models.ArtistName>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>KONSTNÄRER I GALLERIET</h1>
+
+
+<section class="about">
+
+
+    @foreach (var item in Model)
+    {
+
+        <h3>
+            @Html.DisplayFor(modelItem => item.TheArtist)
+        </h3>
+
+    }
+
+</section>

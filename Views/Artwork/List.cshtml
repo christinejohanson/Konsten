@@ -1,0 +1,30 @@
+@model IEnumerable<Konsten.Models.Artwork>
+
+@{
+    ViewData["Title"] = "Gallery";
+}
+<h1>GALLERIET</h1>
+
+@foreach (var item in Model)
+{
+    <div class="card border-light mb-3" style="max-width: 800px;">
+    <div class="row g-0">
+        <div class="col-md-8">
+            <img decoding="async" src="@("~/imageupload/"+item.ImageName)" asp-append-version="true" width="800px"
+                height="600px" class="img-fluid rounded-start" alt="@Html.DisplayFor(modelItem => item.AltText)" />
+
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.ArtistName.TheArtist)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.ArtYear)</p>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.ArtTechnique)</p>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.ArtWidth) cm x @Html.DisplayFor(modelItem =>
+                    item.ArtHeight) cm.</p>
+                <p class="card-text"><small class="text-muted">@Html.DisplayFor(modelItem => item.ArtPrice) kr</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+}

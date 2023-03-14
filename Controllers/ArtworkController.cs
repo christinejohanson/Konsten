@@ -31,6 +31,13 @@ namespace Konsten.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        //GET: Art with no editing options
+        public async Task<IActionResult> List()
+        {
+            var applicationDbContext = _context.Artwork.Include(a => a.ArtistName);
+            return View(await applicationDbContext.ToListAsync());
+        }
+
         // GET: Artwork/Details/5
         public async Task<IActionResult> Details(int? id)
         {

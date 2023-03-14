@@ -27,6 +27,14 @@ namespace Konsten.Controllers
                         Problem("Entity set 'ApplicationDbContext.ArtistName'  is null.");
         }
 
+        // GET: ArtistName without adminfunction
+        public async Task<IActionResult> List()
+        {
+            return _context.ArtistName != null ?
+            View(await _context.ArtistName.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.ArtistName'  is null.");
+        }
+
         // GET: ArtistName/Details/5
         public async Task<IActionResult> Details(int? id)
         {

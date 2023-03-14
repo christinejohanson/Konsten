@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/image/IMG_2406.jpg",
+      "PackagePath": "staticwebassets/image/IMG_2406.jpg"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/image/Konsthuskarta.png",
+      "PackagePath": "staticwebassets/image/Konsthuskarta.png"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/image/konsthuset.jpg",
+      "PackagePath": "staticwebassets/image/konsthuset.jpg"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/image/konsthuset_logotext3.png",
+      "PackagePath": "staticwebassets/image/konsthuset_logotext3.png"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/image/logotyp_konsthuset.png",
+      "PackagePath": "staticwebassets/image/logotyp_konsthuset.png"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/hyset234509687.jpg",
+      "PackagePath": "staticwebassets/imageupload/hyset234509687.jpg"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/matildasmonster234655658.jpg",
+      "PackagePath": "staticwebassets/imageupload/matildasmonster234655658.jpg"
+    },
+    {
       "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
