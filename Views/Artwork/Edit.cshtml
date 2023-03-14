@@ -48,6 +48,7 @@
                 <input asp-for="ArtHeight" class="form-control" />
                 <span asp-validation-for="ArtHeight" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="ImageName" class="control-label"></label>
                 <input asp-for="ImageName" class="form-control" />
@@ -65,11 +66,12 @@
                 <img decoding="async" src="@("~/imageupload/"+Model.ImageName)" asp-append-version="true" width="300px"
                     height="250px" />
             </dd>
+            <!--
             <div class="form-group">
                 <label asp-for="ImageFile" class="control-label"></label>
                 <input asp-for="ImageFile" accept="image/*" />
                 <span asp-validation-for="ImageFile" class="text-danger"></span>
-            </div>
+            </div> -->
 
             <div class="form-group">
                 <input type="submit" value="Spara" class="btn btn-primary" />

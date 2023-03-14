@@ -193,6 +193,10 @@ namespace Konsten.Controllers
                 return Problem("Entity set 'ApplicationDbContext.Artwork'  is null.");
             }
             var artwork = await _context.Artwork.FindAsync(id);
+            /*delete image from wwwroot */
+            var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "imageupload", artwork.ImageName);
+            if (System.IO.File.Exists(imagePath))
+                System.IO.File.Delete(imagePath);
             if (artwork != null)
             {
                 _context.Artwork.Remove(artwork);
