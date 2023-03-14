@@ -2,13 +2,85 @@ html {
   font-size: 14px;
 }
 
+header {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.logotype {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.logotype img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logotype h1 {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 5em;
+}
+
+.text-center img {
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 0;
+  line-height: 16px;
+}
+
+footer {
+  background-color: #4d4d4d;
+  color: white;
+  padding: 2%;
+}
+
+/* about page */
+.about {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 5%;
+}
+
+.about img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about p {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.container {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card {
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -18,5 +90,5 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
