@@ -18,12 +18,14 @@ public class HomeController : Controller
         return View();
     }
 
+
+    [Route("/about")]
     public IActionResult About()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Admin()
     {
         return View();
     }

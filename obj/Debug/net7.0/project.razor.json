@@ -16575,6 +16575,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Home/Admin.cshtml",
+      "TargetPath": "Views\\Home\\Admin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/christinejohanson/Code/Konsten/Areas/Identity/Pages/Account/_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "FileKind": "mvc"

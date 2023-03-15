@@ -27,7 +27,9 @@ namespace Konsten.Controllers
                         Problem("Entity set 'ApplicationDbContext.ArtistName'  is null.");
         }
 
-        // GET: ArtistName without adminfunction
+        // GET: ArtistName with no editing options
+
+        [Route("/artists")]
         public async Task<IActionResult> List()
         {
             return _context.ArtistName != null ?

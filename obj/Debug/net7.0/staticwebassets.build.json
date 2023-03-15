@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XT09KIysuGMlyYXjKEol5sQ3LkqI5Kc3ENFfLw/qdeI=",
+  "Hash": "Op54xKvoVJXlwvDotjiygHvtpHiW+Rg8gIQcYWpdqRQ=",
   "Source": "Konsten",
   "BasePath": "_content/Konsten",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/image/IMG_2406.jpg"
+    },
+    {
+      "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/image/IMG_3637.jpg",
+      "SourceId": "Konsten",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/christinejohanson/Code/Konsten/wwwroot/",
+      "BasePath": "_content/Konsten",
+      "RelativePath": "image/IMG_3637.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/IMG_3637.jpg"
     },
     {
       "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/image/konsthuset_logotext3.png",
