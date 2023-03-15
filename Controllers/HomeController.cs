@@ -25,6 +25,7 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("/admin")]
     public IActionResult Admin()
     {
         return View();

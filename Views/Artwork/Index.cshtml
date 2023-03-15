@@ -5,84 +5,89 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Konstverk i galleriet</h1>
 
 <p>
-    <a asp-action="Create">Skapa ny</a>
+    <a asp-action="Create">Skapa nytt konstverk</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtistName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtYear)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtTechnique)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtPrice)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtWidth)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ArtHeight)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.AltText)
-            </th>
-
-            <th>
-                Uppladdad bild:
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<p>
+    <a asp-controller="ArtistName" asp-action="Index">Administrera konstnärer</a>
+</p>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtistName.TheArtist)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtYear)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtTechnique)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtPrice)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtWidth)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ArtHeight)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.AltText)
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtistName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtYear)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtTechnique)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtWidth)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ArtHeight)
+                </th>
 
-                <td class="col-sm-10">
-                    <img decoding="async" src="@("~/imageupload/"+item.ImageName)" asp-append-version="true" width="300px"
-                    height="250px" />
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Redigera</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Detaljer</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Radera</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.AltText)
+                </th>
+
+                <th>
+                    Uppladdad bild:
+                </th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtistName.TheArtist)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtYear)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtTechnique)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtWidth)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ArtHeight)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AltText)
+                    </td>
+
+                    <td class="col-sm-10">
+                        <img decoding="async" src="@("~/imageupload/"+item.ImageName)" asp-append-version="true" width="400"
+                        height="300" />
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Redigera</a>
+                        <a asp-action="Details" asp-route-id="@item.Id">Detaljer</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Radera</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

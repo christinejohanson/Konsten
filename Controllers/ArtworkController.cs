@@ -25,6 +25,7 @@ namespace Konsten.Controllers
         }
 
         // GET: Artwork
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Artwork.Include(a => a.ArtistName);
@@ -48,6 +49,7 @@ namespace Konsten.Controllers
         }
 
         // GET: Artwork/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Artwork == null)
@@ -67,6 +69,7 @@ namespace Konsten.Controllers
         }
 
         // GET: Artwork/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["ArtistNameId"] = new SelectList(_context.Set<ArtistName>(), "Id", "TheArtist");
@@ -93,6 +96,7 @@ namespace Konsten.Controllers
         // POST: Artwork/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("Id,ArtistNameId,ArtName,ArtYear,ArtTechnique,ArtPrice,ArtWidth,ArtHeight,AltText,ImageFile")] Artwork artwork)
         {
             if (ModelState.IsValid)
@@ -128,6 +132,7 @@ namespace Konsten.Controllers
         }
 
         // GET: Artwork/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Artwork == null)
@@ -149,6 +154,7 @@ namespace Konsten.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ArtName,ArtYear,ArtTechnique,ArtPrice,ArtWidth,ArtHeight,ImageName,AltText,ArtistNameId")] Artwork artwork)
         {
             if (id != artwork.Id)
@@ -181,6 +187,7 @@ namespace Konsten.Controllers
         }
 
         // GET: Artwork/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Artwork == null)
@@ -202,6 +209,7 @@ namespace Konsten.Controllers
         // POST: Artwork/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Artwork == null)
