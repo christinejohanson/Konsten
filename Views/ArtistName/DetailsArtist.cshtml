@@ -1,0 +1,39 @@
+@model Konsten.Models.ArtistName
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Html.DisplayFor(model => model.TheArtist)</h1>
+
+
+
+
+@foreach (var artwork in Model.Artwork)
+{
+    <div class="card border-light mb-3" style="max-width: 800px;">
+    <div class="row g-0">
+        <div class="col-md-8">
+            <img decoding="async" src="@("~/imageupload/"+artwork.ImageName)" asp-append-version="true" width="800"
+                height="600" class="img-fluid rounded-start" alt="@Html.DisplayFor(modelItem => artwork.AltText)" />
+
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => artwork.ArtName)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => artwork.ArtYear)</p>
+                <p class="card-text">@Html.DisplayFor(modelItem => artwork.ArtTechnique)</p>
+                <p class="card-text">@Html.DisplayFor(modelItem => artwork.ArtWidth) cm x @Html.DisplayFor(modelItem =>
+                    artwork.ArtHeight) cm</p>
+                <p class="card-text"><small class="text-muted">@Html.DisplayFor(modelItem => artwork.ArtPrice)
+                        kr</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <a asp-action="Index">Tillbaka till listan</a>
+</div>

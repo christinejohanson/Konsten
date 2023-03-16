@@ -16615,6 +16615,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/christinejohanson/Code/Konsten/Views/ArtistName/DetailsArtist.cshtml",
+      "TargetPath": "Views\\ArtistName\\DetailsArtist.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/christinejohanson/Code/Konsten/Views/Artwork/List.cshtml",
       "TargetPath": "Views\\Artwork\\List.cshtml",
       "FileKind": "mvc"

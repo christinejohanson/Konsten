@@ -55,6 +55,25 @@ namespace Konsten.Controllers
             return View(artistName);
         }
 
+        // GET: ArtistName/Details/5 for non admin
+        public async Task<IActionResult> DetailsArtist(int? id)
+        {
+            if (id == null || _context.ArtistName == null)
+            {
+                return NotFound();
+            }
+
+            var artistName = await _context.ArtistName
+                .Include(a => a.Artwork)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (artistName == null)
+            {
+                return NotFound();
+            }
+
+            return View(artistName);
+        }
+
         // GET: ArtistName/Create
         public IActionResult Create()
         {

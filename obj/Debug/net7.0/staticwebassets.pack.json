@@ -37,8 +37,20 @@
       "PackagePath": "staticwebassets/image/logotyp_konsthuset.png"
     },
     {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/andreasmoppe235324183.jpg",
+      "PackagePath": "staticwebassets/imageupload/andreasmoppe235324183.jpg"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/godzillaharddrive230346275.jpg",
+      "PackagePath": "staticwebassets/imageupload/godzillaharddrive230346275.jpg"
+    },
+    {
       "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/hyset234509687.jpg",
       "PackagePath": "staticwebassets/imageupload/hyset234509687.jpg"
+    },
+    {
+      "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/kabinbwww233022257.jpg",
+      "PackagePath": "staticwebassets/imageupload/kabinbwww233022257.jpg"
     },
     {
       "Id": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/matildasmonster234655658.jpg",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Op54xKvoVJXlwvDotjiygHvtpHiW+Rg8gIQcYWpdqRQ=",
+  "Hash": "K/2K5o4jgcBEFjzIMhT22dKgSRyeZIFYPAqLqWC+8r0=",
   "Source": "Konsten",
   "BasePath": "_content/Konsten",
   "Mode": "Default",
@@ -1207,6 +1207,40 @@
       "OriginalItemSpec": "wwwroot/image/logotyp_konsthuset.png"
     },
     {
+      "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/andreasmoppe235324183.jpg",
+      "SourceId": "Konsten",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/christinejohanson/Code/Konsten/wwwroot/",
+      "BasePath": "_content/Konsten",
+      "RelativePath": "imageupload/andreasmoppe235324183.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/imageupload/andreasmoppe235324183.jpg"
+    },
+    {
+      "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/godzillaharddrive230346275.jpg",
+      "SourceId": "Konsten",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/christinejohanson/Code/Konsten/wwwroot/",
+      "BasePath": "_content/Konsten",
+      "RelativePath": "imageupload/godzillaharddrive230346275.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/imageupload/godzillaharddrive230346275.jpg"
+    },
+    {
       "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/hyset234509687.jpg",
       "SourceId": "Konsten",
       "SourceType": "Discovered",
@@ -1222,6 +1256,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/imageupload/hyset234509687.jpg"
+    },
+    {
+      "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/kabinbwww233022257.jpg",
+      "SourceId": "Konsten",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/christinejohanson/Code/Konsten/wwwroot/",
+      "BasePath": "_content/Konsten",
+      "RelativePath": "imageupload/kabinbwww233022257.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/imageupload/kabinbwww233022257.jpg"
     },
     {
       "Identity": "/Users/christinejohanson/Code/Konsten/wwwroot/imageupload/matildasmonster234655658.jpg",

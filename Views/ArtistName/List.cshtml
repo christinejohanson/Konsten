@@ -23,6 +23,9 @@
         <h3>
             @Html.DisplayFor(modelItem => item.TheArtist)
         </h3>
+        <p>
+            <a asp-action="DetailsArtist" asp-route-id="@item.Id">Detaljer</a>
+        </p>
 
     }
 

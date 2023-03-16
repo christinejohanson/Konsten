@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aXN0TmFtZS9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/christinejohanson/Code/Konsten/Views/ArtistName/DetailsArtist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aXN0TmFtZS9EZXRhaWxzQXJ0aXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/christinejohanson/Code/Konsten/Views/ArtistName/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aXN0TmFtZS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

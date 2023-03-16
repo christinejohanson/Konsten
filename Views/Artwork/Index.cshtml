@@ -79,7 +79,7 @@
 
                     <td class="col-sm-10">
                         <img decoding="async" src="@("~/imageupload/"+item.ImageName)" asp-append-version="true" width="400"
-                        height="300" />
+                        height="300" alt="@Html.DisplayFor(modelItem => item.AltText)" />
                     </td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Redigera</a>
