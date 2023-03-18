@@ -7,8 +7,6 @@
 <h1>@Html.DisplayFor(model => model.TheArtist)</h1>
 
 
-
-
 @foreach (var artwork in Model.Artwork)
 {
     <div class="card border-light mb-3" style="max-width: 800px;">
@@ -35,5 +33,5 @@
 }
 
 <div>
-    <a asp-action="Index">Tillbaka till listan</a>
+    <a asp-action="List">Tillbaka till listan</a>
 </div>

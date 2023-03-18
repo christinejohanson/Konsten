@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using Konsten.Models;
 using Konsten.Data;
 
@@ -20,6 +21,7 @@ namespace Konsten.Controllers
         }
 
         // GET: ArtistName
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return _context.ArtistName != null ?
@@ -38,6 +40,7 @@ namespace Konsten.Controllers
         }
 
         // GET: ArtistName/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.ArtistName == null)
@@ -75,6 +78,7 @@ namespace Konsten.Controllers
         }
 
         // GET: ArtistName/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -85,6 +89,7 @@ namespace Konsten.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("Id,TheArtist")] ArtistName artistName)
         {
             if (ModelState.IsValid)
@@ -97,6 +102,7 @@ namespace Konsten.Controllers
         }
 
         // GET: ArtistName/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.ArtistName == null)
@@ -117,6 +123,7 @@ namespace Konsten.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("Id,TheArtist")] ArtistName artistName)
         {
             if (id != artistName.Id)
@@ -148,6 +155,7 @@ namespace Konsten.Controllers
         }
 
         // GET: ArtistName/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.ArtistName == null)
@@ -168,6 +176,7 @@ namespace Konsten.Controllers
         // POST: ArtistName/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.ArtistName == null)

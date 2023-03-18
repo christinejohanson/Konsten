@@ -64,6 +64,20 @@ footer {
 .about h3 {
   margin-left: 10%;
 }
+.about h4 {
+  margin-left: 10%;
+  text-transform: uppercase;
+}
+.btn a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.btn {
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
 
 .container {
   font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

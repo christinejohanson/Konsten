@@ -19,14 +19,15 @@
     <br>
     @foreach (var item in Model)
     {
-
-        <h3>
+        <h4>
             @Html.DisplayFor(modelItem => item.TheArtist)
-        </h3>
-        <p>
-            <a asp-action="DetailsArtist" asp-route-id="@item.Id">Detaljer</a>
-        </p>
+        </h4>
+        <button type="button" class="btn btn-secondary">
+            <a asp-action="DetailsArtist" asp-route-id="@item.Id">Konstverk</a>
 
+        </button>
+        <br>
+        <br>
     }
 
 </section>
