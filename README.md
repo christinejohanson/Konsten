@@ -17,4 +17,4 @@ Den andra delen är publik där man som användare kommer åt alla publika sidor
 - Resulterande HTML-kod ska analyseras enligt W3C:s rekommendationer och validera korrekt.
 - Webbplatsen ska följa generella riktlinjer vad det gäller tillgänglighet och användbarhet.
 
-### Länk till publicerad demonstration av webbapplikationen: [Klicka för film](https://youtu.be/_8z11u_FT2I)
+### Länk till publicerad demonstration av webbapplikationen: [Klicka för film](https://youtu.be/VLh9pPpuLEA)
