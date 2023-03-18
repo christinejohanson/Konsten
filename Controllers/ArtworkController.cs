@@ -68,23 +68,6 @@ namespace Konsten.Controllers
             return View();
         }
 
-        // POST: Artwork/Create original
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        /* For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ArtName,ArtYear,ArtTechnique,ArtPrice,ArtWidth,ArtHeight,ImageFile,AltText,ArtistNameId")] Artwork artwork)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(artwork);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["ArtistNameId"] = new SelectList(_context.Set<ArtistName>(), "Id", "TheArtist", artwork.ArtistNameId);
-            return View(artwork);
-        } */
-
         // POST: Artwork/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
